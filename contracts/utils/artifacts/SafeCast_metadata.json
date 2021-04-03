@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.3+commit.8d00100c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/utils/SafeCast.sol": "SafeCast"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/utils/SafeCast.sol": {
+			"keccak256": "0x58dcac425e22d9746dfc9f0457abcd535975c2bf37388587d05bce2290ae0fe1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ff4bdd5cc2f24088960a9ee527d52a61a406fd111e46357b228a872828a80c6a",
+				"dweb:/ipfs/QmeqWx8kF35mtGpLLK6Fo4yUngX1sDMztugabRwkR8oSqw"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.3+commit.8d00100c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/utils/GasPump.sol": "GasPump"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/utils/GasPump.sol": {
+			"keccak256": "0xf40f951484d6d0c8a4f3358a026fb474c1452c55e93706677ca5cde6b275e89e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6ce660177ff92ede6a893b3d6361f221da2032b39db274c74673459b40cef728",
+				"dweb:/ipfs/QmagDVSbDw6gciJKiwTsgY6pimq6cen15bdTQPEUSAwNQu"
+			]
+		}
+	},
+	"version": 1
+}

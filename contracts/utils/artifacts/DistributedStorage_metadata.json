@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.8.3+commit.8d00100c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/utils/DistributedStorage.sol": "DistributedStorage"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/commons/StorageUnit.sol": {
+			"keccak256": "0xd7d7a6422d0289aea348d8047c6622bba0d21a6c9a3e14ff264ea7efde92e428",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a727fe7419aec8b02e12052aa793c15151e4210182d1f743d7c3216cd42fc677",
+				"dweb:/ipfs/QmbZFHMBRdWUrGuMVprvMvDiEratGpWUtPt58RqY7QLBkT"
+			]
+		},
+		"contracts/utils/DistributedStorage.sol": {
+			"keccak256": "0x0e2ba4cac5145c7eae8d45c4902dce26f2b38d6c640b2fbde0c5dab04eb139a2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d9eab8fd8f994e33dc8f8df2ed7f595bddb2af22cf9c8a7221c63ef46274aff1",
+				"dweb:/ipfs/QmXUxhzZvATKZxs3T8Ga93aEHUhKfuKnD7Z8Z7nJoSnBQY"
+			]
+		},
+		"contracts/utils/IsContract.sol": {
+			"keccak256": "0x14b41ca3f8fb40ec73b699b93f421cfd71d1649f884c440e67f2511577d5df6a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9d147c48c0665762b19ac98dc88f6c479195eb330ca2ac2c36bdc48eec711de2",
+				"dweb:/ipfs/QmezZoAR1E6eeZFjVg1KB7LqgPVL55sFDTm7gEYQND26mr"
+			]
+		}
+	},
+	"version": 1
+}
