@@ -2,7 +2,7 @@ pragma solidity ^0.8.2;
 
 import "./commons/ReentrancyGuard.sol";
 import "./commons/Ownable.sol";
-import "./ShuffleToken.sol";
+import "./NZTToken.sol";
 import "./utils/SigUtils.sol";
 import "./utils/IsContract.sol";
 import "./utils/SafeCast.sol";
@@ -14,7 +14,7 @@ contract Airdrop is Ownable, ReentrancyGuard {
     using SafeCast for uint256;
     using SafeMath for uint256;
 
-    ShuffleToken public shuffleToken;
+    NZTToken public nztToken;
 
     // Managment
     uint64 public maxClaimedBy = 0;
@@ -44,9 +44,9 @@ contract Airdrop is Ownable, ReentrancyGuard {
     mapping(address => uint256) public claimed;
     mapping(address => uint256) public numberClaimedBy;
 
-    constructor(ShuffleToken _token) public {
-        shuffleToken = _token;
-        shuffleToken.init(address(this), MINT_AMOUNT);
+    constructor(NZTToken _token) public {
+        nztToken = _token;
+        nztToken.init(address(this), MINT_AMOUNT);
         emit SetMaxClaimedBy(maxClaimedBy);
     }
 
@@ -120,7 +120,7 @@ contract Airdrop is Ownable, ReentrancyGuard {
     // ///
 
     function _selfBalance() internal view returns (uint256) {
-        return shuffleToken.balanceOf(address(this));
+        return nztToken.balanceOf(address(this));
     }
 
     function checkFallback(address _to) private returns (bool success) {
@@ -176,8 +176,8 @@ contract Airdrop is Ownable, ReentrancyGuard {
             require(checkFallback(_to), "_to address can't receive tokens");
         }
 
-        // Transfer Shuffle token, paying fee
-        shuffleToken.transferWithFee(_to, claimVal);
+        // Transfer NZT token, paying fee
+        nztToken.transferWithFee(_to, claimVal);
 
         // Emit events
         emit Claimed(msg.sender, _to, signer, val, claimVal);
@@ -190,7 +190,7 @@ contract Airdrop is Ownable, ReentrancyGuard {
                 uint256 extra = claimVal.mult(refsCut).div(10000);
                 // Ignore ref fee if Airdrop balance is not enought
                 if (_selfBalance() >= extra) {
-                    shuffleToken.transferWithFee(_ref, extra);
+                    nztToken.transferWithFee(_ref, extra);
                     emit RefClaim(_ref, extra);
 
                     // Sanity checks
@@ -223,7 +223,7 @@ contract Airdrop is Ownable, ReentrancyGuard {
         migrated[_addr] = migrated[_addr].add(_balance);
 
         // Transfer tokens and emit event
-        shuffleToken.transfer(_addr, _balance);
+        nztToken.transfer(_addr, _balance);
         emit Migrated(_addr, _balance);
     }
 
