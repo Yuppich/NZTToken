@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.2+commit.661d1103"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "read",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_value",
+						"type": "bytes32"
+					}
+				],
+				"name": "write",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/commons/StorageUnit.sol": "StorageUnit"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/commons/StorageUnit.sol": {
+			"keccak256": "0xd7d7a6422d0289aea348d8047c6622bba0d21a6c9a3e14ff264ea7efde92e428",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a727fe7419aec8b02e12052aa793c15151e4210182d1f743d7c3216cd42fc677",
+				"dweb:/ipfs/QmbZFHMBRdWUrGuMVprvMvDiEratGpWUtPt58RqY7QLBkT"
+			]
+		}
+	},
+	"version": 1
+}
